@@ -25,3 +25,4 @@ This automation uses GitHub Actions to check periodically(every hour) for non-ha
 2. It utilizes only open source technology - Ubuntu, CURL, and JQ.
 3. Secrets are stored in [encrypted form by GitHub](https://docs.github.com/en/actions/security-guides/encrypted-secrets).
 4. You can configure your repository as private.
+5. If you leave the GitHub Actions without activity for 60 days the pipeline will stop working so I'm just adding this line to extnd the life of the pipeline.
