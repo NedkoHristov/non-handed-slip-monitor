@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       force:
-        description: ignore timestamp and force update
+        description: Ignore timestamp and force update
         required: false
         default: ''
   schedule:
@@ -15,7 +15,8 @@ jobs:
   track:
     name: Checks for non handed slip
 
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: alpine:latest 
     steps:
       - name: Check for non handed slip
         run: |
